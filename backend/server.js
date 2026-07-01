@@ -6,6 +6,7 @@ import {connectDB} from './config/db.js'
 import userRouter from './routes/userRoute.js'
 import taskRouter from "./routes/taskRoute.js"
 
+
 const app= express();
 const port= process.env.PORT || 4000;
 
@@ -29,6 +30,6 @@ app.get("/",(req,res)=>{
     res.send("API WORKING");
 })
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on ${port}`);
 });
