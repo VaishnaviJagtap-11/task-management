@@ -13,9 +13,15 @@ const port= process.env.PORT || 4000;
 //middleware
 app.use(express.json());
 
-app.use(cors({
-  origin: "*"
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "task-management-eta-snowy.vercel.app"
+    ],
+    credentials: true
+  })
+);
 
 app.use(express.urlencoded({ extended : true}));
 
