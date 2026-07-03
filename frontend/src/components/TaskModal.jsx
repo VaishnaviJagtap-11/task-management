@@ -179,14 +179,14 @@ const TaskModal = ({
 
           {/* DATE */}
 <div className="relative">
-  <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-500" />
+  <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-500 z-10" />
           <input
             type="date"
             name="dueDate"
             value={taskData.dueDate}
             min={today}
             onChange={handleChange}
-            className={baseControlClasses}
+             className={`${baseControlClasses} pl-12 pr-4`}
           />
           </div>
 
