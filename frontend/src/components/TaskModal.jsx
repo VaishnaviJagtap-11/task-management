@@ -178,6 +178,8 @@ const TaskModal = ({
           </select>
 
           {/* DATE */}
+<div className="relative">
+  <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-500" />
           <input
             type="date"
             name="dueDate"
@@ -186,6 +188,7 @@ const TaskModal = ({
             onChange={handleChange}
             className={baseControlClasses}
           />
+          </div>
 
           {/* STATUS */}
           <div className="flex gap-4 items-center">
