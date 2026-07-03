@@ -384,7 +384,7 @@ const TaskItem = ({
                       new Date(
                         task.dueDate
                       ),
-                      "MMM dd"
+                      "dd-MM-yy"
                     )
                 : "-"
             }
@@ -403,7 +403,7 @@ const TaskItem = ({
                     new Date(
                       task.createdAt
                     ),
-                    "MMM dd"
+                    "dd-MM-yy"
                   )}`
                 : "No date"
             }

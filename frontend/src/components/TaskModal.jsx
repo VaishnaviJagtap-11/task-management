@@ -53,7 +53,7 @@ const TaskModal = ({
         priority: taskToEdit.priority || 'Low',
         dueDate: taskToEdit.dueDate?.split('T')[0] || '',
         completed: normalized,
-        _id: taskToEdit._id || taskToEdit.id,   // ✅ FIXED HERE
+        _id: taskToEdit._id || taskToEdit.id,   
       });
 
     } else {
