@@ -20,7 +20,7 @@ import {
   FULL_BUTTON
 } from '../assets/dummy';
 
-const API_URL = 'http://localhost:4000';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const DANGER_BTN =
   "w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition";

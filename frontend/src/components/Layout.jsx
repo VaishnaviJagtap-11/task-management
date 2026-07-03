@@ -41,7 +41,7 @@ const Layout = ({ user, onLogout }) => {
       }
 
       const { data } = await axios.get(
-        "http://localhost:4000/api/tasks/gp",
+       `${import.meta.env.VITE_API_URL}/api/tasks/gp`,
         {
           headers: {
             Authorization:

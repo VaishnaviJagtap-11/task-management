@@ -7,6 +7,9 @@ import axios from 'axios';
 import TaskItem from '../components/TaskItem';
 import TaskModal from '../components/TaskModal';
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+console.log("API URL:", API_URL);
 const CompletePage = () => {
   const { tasks = [], refreshTasks } = useOutletContext();
 
@@ -18,8 +21,8 @@ const CompletePage = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(
-        `http://localhost:4000/api/tasks/${id}/gp`,
+     await axios.delete(
+  `${API_URL}/api/tasks/${id}/gp`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }
@@ -78,7 +81,7 @@ const CompletePage = () => {
     }
 
     await axios.put(
-      `http://localhost:4000/api/tasks/${id}/gp`,
+      `${API_URL}/api/tasks/${id}/gp`,
       taskData,
       {
         headers: { Authorization: `Bearer ${token}` }
@@ -89,6 +92,7 @@ const CompletePage = () => {
     setShowModal(false);
     setSelectedTask(null);
   };
+  
 
   return (
     <div className={CT_CLASSES.page}>
