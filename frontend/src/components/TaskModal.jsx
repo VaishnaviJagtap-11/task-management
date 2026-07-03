@@ -90,7 +90,7 @@ const TaskModal = ({
     setError(null);
 
     try {
-      await onSave(taskData); // parent handles API
+      await onSave(taskData); 
       onClose();
     } catch (err) {
       setError(err.message || 'Something went wrong');

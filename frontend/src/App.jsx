@@ -86,7 +86,6 @@ const App = () => {
   return (
     <Routes>
 
-      {/* Protected Routes */}
       <Route
         path="/"
         element={<ProtectedLayout />}
@@ -139,7 +138,6 @@ const App = () => {
         }
       />
 
-      {/* Fallback */}
       <Route
         path="*"
         element={

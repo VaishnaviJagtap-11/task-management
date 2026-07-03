@@ -38,8 +38,6 @@ const Navbar = ({user = {},onLogout}) => {
                     </div>
 
                    
-                   
-                   
                     {/* PROJECT TITLE */}
                     <span className='text-2xl font-extrabold bg-linear-to-r from-fuchsia-500 via-purple-500
                     to-indigo-500 bg-clip-text text-transparent tracking-wide'>

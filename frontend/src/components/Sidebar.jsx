@@ -258,7 +258,6 @@ const Sidebar = ({ user, tasks }) => {
         </button>
       )}
 
-      {/* MOBILE MENU */}
       {mobileOpen && (
         <div className="fixed inset-0 z-40">
 

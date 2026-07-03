@@ -20,7 +20,7 @@ export const createTask = async (req, res) => {
     }
 }
 
-// user GET ALl TASKS FOR LOGGED-IN USER
+//  GET ALL TASKS FOR LOGGED-IN USER
 export const getTasks = async (req, res) => {
     try {
 

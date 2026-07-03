@@ -73,7 +73,7 @@ const CompletePage = () => {
   const handleTaskSave = async (taskData) => {
     const token = localStorage.getItem("token");
 
-    const id = taskData._id || taskData.id; // 🔥 FIX HERE
+    const id = taskData._id || taskData.id; 
 
     if (!id) {
       console.error("Missing task ID:", taskData);

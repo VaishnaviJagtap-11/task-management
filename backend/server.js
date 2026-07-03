@@ -10,7 +10,7 @@ import taskRouter from "./routes/taskRoute.js"
 const app= express();
 const port= process.env.PORT || 4000;
 
-//middleware
+//MIDDLEWARE
 app.use(express.json());
 
 app.use(
