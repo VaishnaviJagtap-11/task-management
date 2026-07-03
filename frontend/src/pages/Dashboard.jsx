@@ -285,40 +285,75 @@ const Dashboard = () => {
 
       {/* HEADER */}
 
-      <div className="flex justify-between items-center">
+      {/* HEADER */}
 
-        <div>
+<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
 
-          <h1 className="text-3xl font-bold flex items-center gap-2">
+  {/* LEFT SIDE */}
+  <div className="flex flex-col items-start">
 
-            <HomeIcon className="w-6 h-6 text-purple-500"/>
+    <div className="flex items-center gap-3">
 
-            Task Overview
-
-          </h1>
-
-          <p className="text-gray-500">
-
-            Manage your tasks efficiently
-
-          </p>
-
-        </div>
-
-        <button
-          onClick={() =>
-            setShowModal(true)
-          }
-          className={ADD_BUTTON}
-        >
-
-          <Plus size={18}/>
-
-          Add New Task
-
-        </button>
-
+      <div className="
+        p-3
+        rounded-2xl
+        bg-purple-100
+        shadow-sm
+      ">
+        <HomeIcon className="w-6 h-6 text-purple-600" />
       </div>
+
+      <div>
+        <h1 className="
+          text-2xl
+          md:text-3xl
+          font-bold
+          text-gray-800
+        ">
+          Task Overview
+        </h1>
+
+        <p className="
+          text-sm
+          text-gray-500
+          mt-1
+        ">
+          Manage your tasks efficiently
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* RIGHT SIDE BUTTON */}
+
+  <button
+    onClick={() => setShowModal(true)}
+    className="
+      w-full
+      md:w-auto
+      bg-gradient-to-r
+      from-fuchsia-500
+      to-purple-600
+      text-white
+      px-6
+      py-3
+      rounded-xl
+      shadow-lg
+      hover:scale-105
+      transition-all
+      flex
+      items-center
+      justify-center
+      gap-2
+    "
+  >
+    <Plus size={18}/>
+    Add New Task
+  </button>
+
+</div>
 
       {/* STATS */}
 
