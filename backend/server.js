@@ -17,8 +17,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "task-management-eta-snowy.vercel.app"
+      "https://task-management-eta-snowy.vercel.app"
     ],
+     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   })
 );
